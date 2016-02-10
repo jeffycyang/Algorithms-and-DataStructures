@@ -1,7 +1,10 @@
-function permutation(str){
+function permutation(str,k){
 	var p=[];
+	if(k>str.length){
+		k=str.length;
+	}
 	function recurse(s,l){
-		if(s.length===str.length){
+		if(s.length===k){
 			p.push(s);
 			return;
 		}

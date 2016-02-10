@@ -1,9 +1,4 @@
 function heapSort(a){
-	hS(a,a.length);
-	return a;
-}
-
-function hS(a,c){
 	heapify(a,a.length);
 	var end=a.length-1;
 	while(end>0){
@@ -11,6 +6,7 @@ function hS(a,c){
 		end--;
 		siftDown(a,0,end);
 	}
+	return a;
 }
 
 function heapify(a,count){
