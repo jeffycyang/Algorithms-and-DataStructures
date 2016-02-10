@@ -27,6 +27,10 @@ WeightedGraph.prototype.removeEdge=function(node){
 	
 };
 
+WeightedGraph.prototype.size=function(){
+	return this.nodes.length;
+};
+
 function Node(val){
 	this.val=val;
 	this.edges=[];

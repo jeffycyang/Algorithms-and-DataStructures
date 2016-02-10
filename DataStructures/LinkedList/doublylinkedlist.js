@@ -118,11 +118,11 @@ DoublyLinkedlist.prototype.removeNodeAt=function(index){
     	node=node.next;
     	nxt=node.next;
     }
-    prev.next=nxt;
+	prev.next=nxt;
 	nxt.prev=prev;
 	node.next=null;
 	node.prev=null;
-    return node;
+	return node;
 };
 
 function Node(val){
