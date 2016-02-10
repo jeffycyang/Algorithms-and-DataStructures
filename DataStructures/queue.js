@@ -19,3 +19,5 @@ Queue.prototype.dequeue=function(){
 Queue.prototype.size=function(){
 	return this.inbox.length+this.outbox.length;
 };
+
+module.exports=Queue;

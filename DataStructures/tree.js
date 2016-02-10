@@ -34,3 +34,5 @@ Tree.prototype.isDescendant=function(node){
 	}
 	return false;
 };
+
+module.exports=Tree;

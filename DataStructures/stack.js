@@ -13,3 +13,5 @@ Stack.prototype.pop=function(){
 Stack.prototype.size=function(){
 	return this.storage.length;
 };
+
+module.exports=Stack;
