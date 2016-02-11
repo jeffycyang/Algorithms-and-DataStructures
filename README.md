@@ -19,4 +19,4 @@
 - Permutation
 - Combination
 - Power Set
-etc.
+- etc.
