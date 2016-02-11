@@ -1,13 +1,13 @@
-#Algorithms
+# Algorithms
 
-####Search####
+## Search
 
 - Breadth First Search/Select
 - Depth First Search/Select
 - Djikstra
 - Find Common Ancestor
 
-####Sort####
+## Sort
 
 - Heap Sort
 - Insertion Sort

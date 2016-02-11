@@ -1,20 +1,20 @@
-#Algorithms and Data Structures
+# Algorithms and Data Structures
 
 - A collection of algorithms, data structures, and miscellaneous logic/mathematics problems in the JavaScript language.
 
-####Algorithms####
+## Algorithms
 
 - Search
 - Sort
 
-####Data Structures####
+## Data Structures
 
 - Graph
 - Hash Table
 - Linked List
 - Tree
 
-####Miscellaneous####
+## Miscellaneous
 
 - Permutation
 - Combination

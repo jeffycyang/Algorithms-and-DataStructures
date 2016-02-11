@@ -1,29 +1,29 @@
-#Data Structures
+# Data Structures
 
-####Graph####
+## Graph
 
 - Breadth First Search/Select
 - Depth First Search/Select
 - Djikstra
 - Find Common Ancestor
 
-####Hash Table####
+## Hash Table
 
 - Hash Table
 - Resizeable Hash Table
 
-####Heap####
+## Heap
 
 - Binary Heap (generic)
 - Max Binary Heap
 - Min Binary Heap
 
-####Linked List####
+## Linked List
 
 - Linked List
 - Doubly Linked List
 
-####Tree####
+## Tree
 
 - Binary Tree
 - B-Tree
