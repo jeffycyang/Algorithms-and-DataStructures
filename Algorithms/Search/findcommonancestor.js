@@ -17,6 +17,7 @@ Tree.prototype.closestCommonAncestor=function(m,n){
 		}
 		ca=path1[i];
 	}
+	return ca;
 };
 
 Tree.prototype.ancestorPath=function(n){
