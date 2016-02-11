@@ -1,10 +1,11 @@
-function HashTable(size){
+function HashTable(){
 	this.storage=[];
-	this.size=size;
+	this.limit=1000;
+	this.size=0;
 }
 
 HashTable.prototype.insert=function(key,val){
-	var ind=hash(key,this.size);
+	var ind=hash(key,this.limit);
 	var exist=false;
 	this.storage[ind]=this.storage[ind]||[];
 	for(var i=0;i<this.storage[ind].length;i++){
@@ -16,12 +17,15 @@ HashTable.prototype.insert=function(key,val){
 	}
 	if(!exist){
 		this.storage[ind].push([key,val]);
+		this.size++;
 	}
 };
 
 HashTable.prototype.retrieve=function(key){
-	var ind=hash(key,this.size);
-	this.storage[ind]=this.storage[ind]||[];
+	var ind=hash(key,this.limit);
+	if(!this.storage[ind]){
+		return null;
+	}
 	for(var i=0;i<this.storage[ind].length;i++){
 		if(this.storage[ind][i][0]===key){
 			return this.storage[ind][i][1];
@@ -31,14 +35,19 @@ HashTable.prototype.retrieve=function(key){
 };
 
 HashTable.prototype.remove=function(key){
-	var ind=hash(key,this.size);
-	this.storage[ind]=this.storage[ind]||[];
+	var ind=hash(key,this.limit);
+	if(!this.storage[ind]){
+		return null;
+	}
 	for(var i=0;i<this.storage[ind].length;i++){
 		if(this.storage[ind][i][0]===key){
+			var val=this.storage[ind][i][1];
 			this.storage[ind].splice(i,1);
-			return;
+			this.size--;
+			return val;
 		}
 	}
+	return null;
 };
 
 function hash(str,max){
@@ -50,3 +59,5 @@ function hash(str,max){
 	}
 	return h%max;
 }
+
+module.exports=HashTable;
