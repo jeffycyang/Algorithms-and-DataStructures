@@ -54,7 +54,7 @@ function hash(str,max){
 	var h=0;
 	for(var i=0;i<str.length;i++) {
 		h=(h<<5)+h+str.charCodeAt(i);
-		h=h&h; // Convert to 32bit integer
+		h=h&h;
 		h=Math.abs(h);
 	}
 	return h%max;
