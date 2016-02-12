@@ -20,3 +20,11 @@
 - Combination
 - Power Set
 - etc.
+
+### To-Do
+
+- refactor Nodes and fix module exporting for Graphs
+- write Trees
+- Radix Sort
+- Traveling Saleman
+- Time/Space Complexity for all
