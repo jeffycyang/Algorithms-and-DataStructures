@@ -15,13 +15,18 @@
 ## Heap
 
 - Binary Heap (generic)
-- Max Binary Heap
-- Min Binary Heap
+- Max Binary Heap (builder)
+- Min Binary Heap (builder)
 
 ## Linked List
 
 - Linked List
 - Doubly Linked List
+
+## Queue
+
+- Queue
+- Priority Queue
 
 ## Tree
 

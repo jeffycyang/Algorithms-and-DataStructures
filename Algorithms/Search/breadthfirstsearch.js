@@ -1,4 +1,4 @@
-var Queue=require('../../DataStructures/queue');
+var Queue=require('../../DataStructures/Queue/queue');
 var Tree=require('../../DataStructures/tree');
 
 Tree.prototype.breadthFirstSearch=function(target){
