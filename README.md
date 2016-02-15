@@ -12,6 +12,7 @@
 - Graph
 - Hash Table
 - Linked List
+- Queue
 - Tree
 
 ## Miscellaneous
