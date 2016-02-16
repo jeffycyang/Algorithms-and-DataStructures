@@ -34,6 +34,24 @@ BinarySearchTree.prototype.insert=function(val){
 	}
 };
 
+BinarySearchTree.prototype.search=function(val){
+	if(!this.root){
+		return false;
+	}
+	var currNode=this.root;
+	while(currNode){
+		if(currNode.val===val){
+			return true;
+		}
+		if(val<currNode.val){
+			currNode=currNode.left;
+		}else{
+			currNode=currNode.right;
+		}
+	}
+	return false;
+};
+
 BinarySearchTree.prototype.BFS=function(val){
 	var cn;
 	var q=new Queue();
