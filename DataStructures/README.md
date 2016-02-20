@@ -2,10 +2,10 @@
 
 ## Graph
 
-- Breadth First Search/Select
-- Depth First Search/Select
-- Djikstra
-- Find Common Ancestor
+- Graph (generic)
+- Directed Graph
+- Weighted Graph
+- Directed Weighted Graph
 
 ## Hash Table
 
@@ -33,3 +33,10 @@
 - Binary Tree
 - B-Tree
 - Red Black Tree
+
+## Misc.
+
+- Circular Buffer
+- LRU Cache
+- Trie
+- Stack

@@ -14,9 +14,13 @@
 - Linked List
 - Queue
 - Tree
+- LRU Cache
+- Circular Buffer
+- Trie
 
 ## Miscellaneous
 
+- Dynamic Programming
 - Permutation
 - Combination
 - Power Set
@@ -24,8 +28,7 @@
 
 ### To-Do
 
-- refactor Nodes and fix module exporting for Graphs
-- write Trees
-- Radix Sort
+- B-Tree
+- Red Black Tree
 - Traveling Saleman
 - Time/Space Complexity for all

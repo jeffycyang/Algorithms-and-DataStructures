@@ -15,3 +15,7 @@
 - Quick Sort
 - Radix Sort
 - Reverse Linked List
+
+## Misc.
+
+- Levenshtein Distance
