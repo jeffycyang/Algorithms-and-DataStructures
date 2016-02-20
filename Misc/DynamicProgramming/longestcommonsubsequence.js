@@ -66,10 +66,10 @@ function lCS(s1,s2){
             if(s1[i]===s2[j]){
                 p[i][j]=p[i-1][j-1]+s1[i];
             }else{
-                if(p[i][j-1].length<p[i-1][j].length){
+                if(p[i][j-1].length<=p[i-1][j].length){
                     p[i][j]=p[i-1][j];
                 }
-                if(p[i-1][j].length<p[i][j-1].length){
+                if(p[i-1][j].length<=p[i][j-1].length){
                     p[i][j]=p[i][j-1];
                 }
             }
