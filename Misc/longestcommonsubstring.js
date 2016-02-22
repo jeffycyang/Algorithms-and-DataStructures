@@ -22,6 +22,6 @@ function longestCommonSubstring(s1,s2){
         }
     }
     return ls;
-}
+}   
 
 longestCommonSubstring('aaabceftwd','dabcefsxy');

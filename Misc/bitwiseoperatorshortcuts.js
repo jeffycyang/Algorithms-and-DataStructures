@@ -12,4 +12,4 @@ c=c>>1;
 
 var d=5.2
 d=d<<1
-//d is now 10, equivalent to Math.floor(d/2)
+//d is now 10, equivalent to Math.floor(d*2)

@@ -33,6 +33,9 @@ CircularBuffer.prototype.read=function(){
     if(this.readp===this.stor.length){
         this.readp=0;
     }
+    if(this.writep===this.readp){
+        return;
+    }
     return this.stor[this.readp++];
 };
 
@@ -77,7 +80,7 @@ CircularBuffer.prototype.write=function(data){
 };
 
 CircularBuffer.prototype.remove=function(){
-    
+    //to-do
 };
 
 CircularBuffer.prototype.read=function(){
