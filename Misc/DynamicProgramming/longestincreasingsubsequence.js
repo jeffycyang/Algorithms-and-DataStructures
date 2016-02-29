@@ -31,6 +31,7 @@ function longestIncreasingSubsequence(a){
 //n^2 dp solution
 function longestIncreasingSubsequence(a){
     var p=[];
+    var l=[];
     for(var i=0;i<a.length;i++){
         p.push([]);
         for(var j=a.length-1;j>=i;j--){
@@ -43,12 +44,15 @@ function longestIncreasingSubsequence(a){
                     p[i][j]=p[i-1][j];
                 }
             }
+            if(p[i][j].length>l.length){
+                l=p[i][j];
+            }
         }
     }
     console.log(p);
-    return p[a.length-1][a.length-1];
+    return l;
 }
-longestIncreasingSubsequence([7,1,6,2,3,9]);
+longestIncreasingSubsequence([7,1,6,2,3,9,4,5,3]);
 
 //recursive
 function longestIncreasingSubsequence(a){
