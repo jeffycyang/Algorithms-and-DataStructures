@@ -68,8 +68,6 @@ DoublyLinkedList.prototype.removeFromTail=function(){
 
 DoublyLinkedList.prototype.reset=function(data){
     var node=this.head;
-    var prev;
-    var nxt;
     while(node.data!==data){
         node=node.next;
     }

@@ -28,6 +28,28 @@ function longestIncreasingSubsequence(a){
     return l;
 }
 
+//n^2 dp solution
+function longestIncreasingSubsequence(a){
+    var p=[];
+    for(var i=0;i<a.length;i++){
+        p.push([]);
+        for(var j=a.length-1;j>=i;j--){
+            if(i===0){
+                p[0][j]=[a[j]];
+            }else{
+                if(a[j]>a[i]){
+                    p[i][j]=p[i-1][i].concat(a[j]);
+                }else{
+                    p[i][j]=p[i-1][j];
+                }
+            }
+        }
+    }
+    console.log(p);
+    return p[a.length-1][a.length-1];
+}
+longestIncreasingSubsequence([7,1,6,2,3,9]);
+
 //recursive
 function longestIncreasingSubsequence(a){
     var l=[];
